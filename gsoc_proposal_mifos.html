@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSoC 2026 Proposal - The Mifos Initiative - Madhan Raj</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px; }
+        h1 { color: #005A9C; border-bottom: 2px solid #005A9C; padding-bottom: 10px; }
+        h2 { color: #005A9C; margin-top: 30px; border-bottom: 1px solid #ddd; }
+        h3 { color: #444; margin-top: 20px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-family: monospace; }
+        .metadata { background: #f9f9f9; padding: 15px; border-radius: 5px; border-inline-start: 5px solid #005A9C; margin-bottom: 30px; }
+        @media print {
+            body { padding: 0; }
+            button { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <h1>GSoC 2026 Proposal: AI-Powered Fraud Detection for Mifos</h1>
+    
+    <div class="metadata">
+        <strong>Organization:</strong> The Mifos Initiative<br>
+        <strong>Name:</strong> Madhan Raj D<br>
+        <strong>Email:</strong> mathan2412005@gmail.com<br>
+        <strong>GitHub:</strong> <a href="https://github.com/MADHANRAJ24">MADHANRAJ24</a><br>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/d-madhan-raj-22032b27b/">Profile</a>
+    </div>
+
+    <h2>1. Project Title</h2>
+    <p>Developing an AI-Driven Fraud Detection and Real-time Transaction Monitoring System for Mifos X</p>
+
+    <h2>2. Project Abstract</h2>
+    <p>Financial inclusion requires not only access but also security. The Mifos Initiative supports millions of underserved individuals, making it a prime target for transactional fraud. My proposal aims to implement an open-source, AI-powered fraud detection system using <strong>anomaly detection techniques</strong> and <strong>stateful agentic workflows (LangGraph)</strong>. By integrating real-time transaction monitoring with automated risk-scoring agents, I will provide Mifos X with a robust security layer that can proactively identify and block suspicious activities, ensuring the integrity of microfinance operations globally.</p>
+
+    <h2>3. Detailed Project Description</h2>
+    <h3>Problem</h3>
+    <p>Manual fraud monitoring in microfinance is slow and prone to errors. Traditional rule-based systems often fail to catch complex, evolving fraud patterns in real-time transactions.</p>
+
+    <h3>Proposed Solution</h3>
+    <p>I will build a system that combines historical data analysis with agentic reasoning:</p>
+    <ul>
+        <li><strong>AI Fraud Engine</strong>: Implement an anomaly detection service using models like XGBoost or LightGBM to evaluate transaction risk based on user history and behavior patterns.</li>
+        <li><strong>Agentic Monitoring</strong>: Use <strong>LangGraph</strong> to create specialized "Security Agents" that monitor the transaction flow, flagging high-risk events for manual review or automatic intervention.</li>
+        <li><strong>Scalable Web Service</strong>: Develop an independent, API-driven service that Mifos X can query during the transaction lifecycle to get instant risk scores.</li>
+    </ul>
+
+    <h2>4. Deliverables</h2>
+    <ul>
+        <li><strong>Fraud Detection Module</strong>: An open-source service capable of processing transaction logs for anomaly detection.</li>
+        <li><strong>Mifos X Integration PoC</strong>: A reference implementation showing how to hook the AI engine into the existing Mifos Payment Hub.</li>
+        <li><strong>Agentic Audit Dashboard</strong>: A visualization tool for administrators to see flagged transactions and the AI's "reasoning" behind risk scores.</li>
+        <li><strong>Documentation</strong>: Comprehensive training guide for deploying and fine-tuning the AI models for different microfinance contexts.</li>
+    </ul>
+
+    <h2>5. Why Me?</h2>
+    <ul>
+        <li><strong>Financial AI Expertise</strong>: Developed an autonomous trading bot with real-time API integrations.</li>
+        <li><strong>Proven PoC Work</strong>: Built the "FinBot" security POC for OWASP, focusing on agentic fraud detection in invoice processing.</li>
+        <li><strong>Technical Stack</strong>: Proficient in Python, LangGraph, and Machine Learning frameworks requested by Mifos.</li>
+    </ul>
+
+    <h2>6. Timeline</h2>
+    <ul>
+        <li><strong>Community Bonding</strong>: Familiarize with Mifos X REST APIs and the Payment Hub EE architecture.</li>
+        <li><strong>Weeks 1-4</strong>: Develop the core anomaly detection models using available transaction datasets.</li>
+        <li><strong>Weeks 5-8</strong>: Build the LangGraph-based monitoring agents and the independent risk-scoring web service.</li>
+        <li><strong>Weeks 9-12</strong>: Integration testing with Mifos simulation environments and final documentation.</li>
+    </ul>
+
+    <h2>7. AI Tool Disclosure</h2>
+    <p>Prepared with assistance from Antigravity (Google DeepMind) and Gemini 2.0 Pro.</p>
+
+    <button onclick="window.print()" style="margin-top: 50px; padding: 10px 20px; background: #005A9C; color: white; border: none; border-radius: 5px; cursor: pointer;">Print to PDF</button>
+
+</body>
+</html>

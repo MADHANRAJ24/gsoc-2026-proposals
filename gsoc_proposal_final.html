@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSoC 2026 Proposal - Madhan Raj</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px; }
+        h1 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 10px; }
+        h2 { color: #0056b3; margin-top: 30px; border-bottom: 1px solid #ddd; }
+        h3 { color: #444; margin-top: 20px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-family: monospace; }
+        .metadata { background: #f9f9f9; padding: 15px; border-radius: 5px; border-inline-start: 5px solid #0056b3; margin-bottom: 30px; }
+        @media print {
+            body { padding: 0; }
+            button { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <h1>GSoC 2026 Proposal: OWASP FinBot CTF</h1>
+    
+    <div class="metadata">
+        <strong>Name:</strong> Madhan Raj D<br>
+        <strong>Email:</strong> mathan2412005@gmail.com<br>
+        <strong>GitHub:</strong> <a href="https://github.com/MADHANRAJ24">MADHANRAJ24</a><br>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/d-madhan-raj-22032b27b/">Profile</a>
+    </div>
+
+    <h2>1. Project Title</h2>
+    <p>Enhancing OWASP FinBot CTF with Multi-Agent Security Simulations and Goal Manipulation Guardrails</p>
+
+    <h2>2. Project Abstract</h2>
+    <p>The OWASP FinBot CTF aims to expose vulnerabilities in agentic AI systems. My proposal focuses on expanding this ecosystem by building a sophisticated multi-agent simulation using <strong>LangGraph</strong>. This approach simulates complex interactions between financial agents (e.g., Accountant, Auditor, Approver) to identify edge cases where cross-agent goal manipulation or hijacked reasoning can lead to unauthorized invoice processing. By integrating state-of-the-art prompt injection detection and rule-based guardrails, I will provide a robust sandbox for ethical hackers and developers to learn agentic security.</p>
+
+    <h2>3. Detailed Project Description</h2>
+    <h3>Problem</h3>
+    <p>Agentic AI systems, especially multi-agent swarms, are susceptible to "Goal Manipulation" where an attacker can redirect the swarm's objective through indirect communication or shared memory.</p>
+
+    <h3>Proposed Solution</h3>
+    <p>I have already developed a <strong>Proof of Concept (PoC)</strong> demonstrating a secure 3-agent LangGraph workflow. The proposed full project will expand this to:</p>
+    <ul>
+        <li><strong>Multi-Agent Architecture</strong>: Implement a tiered agent system (Auditor, Processor, Finalizer) using <strong>LangGraph</strong> for stateful multi-turn reasoning.</li>
+        <li><strong>Challenge Tiers</strong>: Create "Capture The Flag" levels where users must bypass or secure the system against Indirect Prompt Injection, Goal Hijacking, and Data Leakage.</li>
+        <li><strong>Security Layer</strong>: Implement <strong>Stateful Validation Nodes</strong> that use historical context checks and guardrails to detect anomalous agent behavior.</li>
+    </ul>
+
+    <h2>4. Deliverables</h2>
+    <ul>
+        <li><strong>Challenge Set 1</strong>: Multi-agent invoice processing simulation with basic goal manipulation vulnerabilities.</li>
+        <li><strong>Challenge Set 2</strong>: Advanced prompt injection scenarios involving cross-agent memory exploitation.</li>
+        <li><strong>Detection Framework</strong>: A set of Python-based tools/nodes for LangGraph to detect and mitigate injection attacks.</li>
+        <li><strong>Documentation</strong>: Comprehensive tutorial on identifying and securing agentic AI workflows.</li>
+    </ul>
+
+    <h2>5. Why Me?</h2>
+    <ul>
+        <li><strong>Expertise in LangGraph & Multi-Agent Systems</strong>: Developed "The Swarm" (20+ agents) and "AI Scientific Assistant" using stateful reasoning.</li>
+        <li><strong>Autonomous Systems</strong>: Built a self-improving super-intelligent trading bot with Groq and Angel One API.</li>
+        <li><strong>Strong ML Foundation</strong>: B.Tech in AI & DS, experience with Transformers from scratch and Agentic RAG.</li>
+    </ul>
+
+    <h2>6. Timeline</h2>
+    <ul>
+        <li><strong>Community Bonding</strong>: Finalize project scope with mentors, research OWASP existing code.</li>
+        <li><strong>Weeks 1-4</strong>: Build core multi-agent invoice logic and first 2 CTF challenges.</li>
+        <li><strong>Weeks 5-8</strong>: Implement advanced security challenges and detection framework.</li>
+        <li><strong>Weeks 9-12</strong>: Testing, documentation, and final deployment.</li>
+    </ul>
+
+    <h2>7. AI Tool Disclosure</h2>
+    <p>As recommended by OWASP guidelines:</p>
+    <ul>
+        <li>[x] My GSoC proposal includes AI-assisted structure and refinement.</li>
+        <li>[x] I used the following AI tools during preparation:
+            <ul>
+                <li><strong>AI Tools</strong>: Antigravity (Google DeepMind)</li>
+                <li><strong>LLMs</strong>: Gemini 2.0 Pro</li>
+                <li><strong>Prompts</strong>: "Help refine GSoC proposal structure," "Generate multi-agent architecture diagram."</li>
+            </ul>
+        </li>
+    </ul>
+
+    <button onclick="window.print()" style="margin-top: 50px; padding: 10px 20px; background: #0056b3; color: white; border: none; border-radius: 5px; cursor: pointer;">Print to PDF</button>
+
+</body>
+</html>
