@@ -35,3 +35,22 @@ Thank you for your time and guidance!
 
 GitHub: [MADHANRAJ24](https://github.com/MADHANRAJ24)
 LinkedIn: [Profile](https://www.linkedin.com/in/d-madhan-raj-22032b27b/)"
+
+---
+
+## 3. ML4SCI (Machine Learning for Science)
+**Channel**: Slack (#gsoc-ml4sci) / Mailing List
+**Subject**: [GSoC 2026] Inquiry for "Agentic Lagrangian Extraction" Project - Madhan Raj
+
+"Hi ML4SCI Team,
+
+I'm Madhan Raj, a B.Tech AI & Data Science student. I am passionate about the intersection of agentic AI and scientific discovery.
+
+I am drafting a GSoC 2026 proposal for **'Agentic AI for Automated Lagrangian-Level Model Extraction from Scientific Literature'** within the HEPSIM area. This project leverages my expertise in stateful multi-agent workflows (LangGraph) and my background in building 'AI Scientific Assistants.'
+
+I've already developed a Proof of Concept (PoC) for agentic reasoning in complex document parsing. I would love to discuss the specific Lagrangian formats and literature sources (e.g., arXiv/INSPIRE-HEP) that are most critical for the HEPSIM community.
+
+Looking forward to hearing from you!
+
+GitHub: [MADHANRAJ24](https://github.com/MADHANRAJ24)
+LinkedIn: [Profile](https://www.linkedin.com/in/d-madhan-raj-22032b27b/)"

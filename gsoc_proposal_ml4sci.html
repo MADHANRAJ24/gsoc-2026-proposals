@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSoC 2026 Proposal - ML4SCI - Madhan Raj</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px; }
+        h1 { color: #8E1F2F; border-bottom: 2px solid #8E1F2F; padding-bottom: 10px; }
+        h2 { color: #8E1F2F; margin-top: 30px; border-bottom: 1px solid #ddd; }
+        h3 { color: #444; margin-top: 20px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-family: monospace; }
+        .metadata { background: #f9f9f9; padding: 15px; border-radius: 5px; border-inline-start: 5px solid #8E1F2F; margin-bottom: 30px; }
+        @media print {
+            body { padding: 0; }
+            button { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <h1>GSoC 2026 Proposal: Agentic Lagrangian Extraction</h1>
+    
+    <div class="metadata">
+        <strong>Organization:</strong> ML4SCI (Machine Learning for Science)<br>
+        <strong>Focus Area:</strong> HEPSIM (High Energy Physics Simulation)<br>
+        <strong>Name:</strong> Madhan Raj D<br>
+        <strong>Email:</strong> mathan2412005@gmail.com<br>
+        <strong>GitHub:</strong> <a href="https://github.com/MADHANRAJ24">MADHANRAJ24</a><br>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/d-madhan-raj-22032b27b/">Profile</a>
+    </div>
+
+    <h2>1. Project Title</h2>
+    <p>Agentic AI for Automated Lagrangian-Level Model Extraction from Scientific Literature</p>
+
+    <h2>2. Project Abstract</h2>
+    <p>Efficiently identifying and extracting fundamental physics models (Lagrangians) from a vast body of scientific literature is a bottleneck in high-energy physics research. My proposal for <strong>ML4SCI</strong> introduces an <strong>Agentic AI workflow</strong> using <strong>LangGraph</strong> to automate this extraction process. By orchestrating specialized agents (Literature-Parser, Physics-Validator, Model-Synthesizer), I will develop a system that can accurately identify Lagrangian density terms, parameters, and symmetries within research papers. This framework will leverage stateful multi-turn reasoning to cross-validate extracted data against known physics constraints, significantly accelerating the integration of new theoretical models into simulation pipelines.</p>
+
+    <h2>3. Detailed Project Description</h2>
+    <h3>Problem</h3>
+    <p>Scientific papers often represent Lagrangians in non-standardized formats or symbolic notation that is difficult for traditional NLP tools to parse accurately. Missing or misinterpreted terms can lead to significant errors in downstream Monte Carlo simulations.</p>
+
+    <h3>Proposed Solution</h3>
+    <p>I will implement a multi-agent swarm dedicated to scientific discovery:</p>
+    <ul>
+        <li><strong>Literature Agent</strong>: Utilizes advanced RAG techniques to parse complex PDF structures and extract mathematical notation from LaTeX source code or OCR.</li>
+        <li><strong>Validation Agent</strong>: Implements rule-based and LLM-based checks to ensure extracted Lagrangians are physically consistent (e.g., gauge invariance, conservation laws).</li>
+        <li><strong>Synthesis Node</strong>: Uses <strong>LangGraph</strong> to coordinate feedback loops between agents, refining the extracted model until it meets a predefined confidence threshold.</li>
+    </ul>
+
+    <h2>4. Deliverables</h2>
+    <ul>
+        <li><strong>Agentic Extraction Core</strong>: A LangGraph-based workflow for parsing and validating Lagrangian models.</li>
+        <li><strong>HEPSIM Integration</strong>: A tool to convert extracted Lagrangians into standardized formats compatible with HEPSIM simulation tools.</li>
+        <li><strong>Benchmark Dataset</strong>: A curated set of extracted models from 50+ high-impact physics papers for validation.</li>
+        <li><strong>Technical Documentation</strong>: Guide on adapting the agentic framework for other scientific extraction tasks.</li>
+    </ul>
+
+    <h2>5. Why Me?</h2>
+    <ul>
+        <li><strong>AI Scientific Experience</strong>: Developed an "AI Scientific Assistant" focused on stateful mathematical reasoning.</li>
+        <li><strong>Expertise in Multi-Agent Systems</strong>: Deep experience with <strong>LangGraph</strong> for building complex, multi-turn reasoning swarms.</li>
+        <li><strong>Mathematical Foundation</strong>: Strong background in AI & Data Science with the ability to bridge the gap between machine learning and high-energy physics concepts.</li>
+    </ul>
+
+    <h2>6. Timeline</h2>
+    <ul>
+        <li><strong>Community Bonding</strong>: Sync with HEPSIM mentors, finalize literature source access, and study the specific Lagrangian formats used in CMS/ATLAS.</li>
+        <li><strong>Weeks 1-4</strong>: Build the core RAG-based Literature Agent and symbolic parsing logic.</li>
+        <li><strong>Weeks 5-8</strong>: Implement the Physics Validation Agent and the LangGraph-based consensus loop.</li>
+        <li><strong>Weeks 9-12</strong>: Testing across diverse papers, integration with HEPSIM tools, and final documentation.</li>
+    </ul>
+
+    <h2>7. AI Tool Disclosure</h2>
+    <p>Prepared with assistance from Antigravity (Google DeepMind) and Gemini 2.0 Pro.</p>
+
+    <button onclick="window.print()" style="margin-top: 50px; padding: 10px 20px; background: #8E1F2F; color: white; border: none; border-radius: 5px; cursor: pointer;">Print to PDF</button>
+
+</body>
+</html>

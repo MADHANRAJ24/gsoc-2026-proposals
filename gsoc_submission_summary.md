@@ -31,3 +31,20 @@ AI, Fraud Detection, Fintech, Security, Financial Inclusion, Microfinance, Anoma
 
 **Detailed Description**:
 (See [gsoc_proposal_mifos.html](file:///c:/Users/matha/OneDrive/Pictures/Desktop/google%20summer/gsoc_proposal_mifos.html))
+
+---
+
+## 3. ML4SCI (Machine Learning for Science)
+**Title**: Agentic AI for Automated Lagrangian-Level Model Extraction from Scientific Literature
+
+**Proposal Summary (Copy this)**:
+Efficiently identifying and extracting fundamental physics models (Lagrangians) from a vast body of scientific literature is a bottleneck in high-energy physics research. My proposal for ML4SCI introduces an Agentic AI workflow using LangGraph to automate this extraction process. By orchestrating specialized agents (Literature-Parser, Physics-Validator, Model-Synthesizer), I will develop a system that can accurately identify Lagrangian density terms, parameters, and symmetries within research papers. This framework will leverage stateful multi-turn reasoning to cross-validate extracted data against known physics constraints, significantly accelerating the integration of new theoretical models into simulation pipelines.
+
+**Project Technologies (Enter these)**:
+Python, LangGraph, RAG, LaTeX, NLP, PyTorch, HEPSIM, Scientific AI
+
+**Project Topics (Enter these)**:
+Agentic AI, Physics, High Energy Physics, Machine Learning, Scientific Literature, Automation
+
+**Detailed Description**:
+(See [gsoc_proposal_ml4sci.html](file:///c:/Users/matha/OneDrive/Pictures/Desktop/google%20summer/gsoc_proposal_ml4sci.html))
