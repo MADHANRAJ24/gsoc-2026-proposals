@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Madhan Raj - Fintech Focus</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px; }
+        .header { text-align: center; border-bottom: 2px solid #2c3e50; padding-bottom: 15px; margin-bottom: 25px; }
+        .header h1 { margin: 0; color: #2c3e50; text-transform: uppercase; }
+        .contact { margin-top: 10px; font-size: 0.9em; }
+        .section { margin-bottom: 25px; }
+        .section h2 { border-bottom: 1px solid #ccc; color: #2c3e50; padding-bottom: 5px; font-size: 1.3em; }
+        .job { margin-bottom: 15px; }
+        .job-title { font-weight: bold; color: #34495e; }
+        .job-date { float: right; font-style: italic; font-size: 0.9em; }
+        .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill { background: #ecf0f1; padding: 3px 10px; border-radius: 4px; font-size: 0.9em; }
+        @media print { button { display: none; } body { padding: 0; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Madhan Raj D</h1>
+        <div class="contact">
+            mathan2412005@gmail.com | <a href="https://github.com/MADHANRAJ24">GitHub (MADHANRAJ24)</a> | <a href="https://linkedin.com/in/d-madhan-raj-22032b27b/">LinkedIn</a>
+        </div>
+        <p><strong>Focus: AI-Powered Fintech & Transaction Security</strong></p>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <div class="job">
+            <span class="job-title">Bachelor of Technology in Artificial Intelligence & Data Science</span>
+            <span class="job-date">Current</span>
+            <p>Focusing on scalable machine learning and agentic workflows for financial security.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>GSoC Project Focus: The Mifos Initiative</h2>
+        <p><strong>Developing an AI-Driven Fraud Detection and Real-time Transaction Monitoring System for Mifos X</strong></p>
+        <ul>
+            <li>Designing an independent risk-scoring service for real-time transaction validation.</li>
+            <li>Implementing anomaly detection engines (XGBoost/LightGBM) to detect non-standard transaction patterns.</li>
+            <li>Applying LangGraph-based stateful workflows to automate security auditing of microfinance operations.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Relevant Projects</h2>
+        <div class="job">
+            <span class="job-title">FinBot Security Proof of Concept (PoC)</span>
+            <ul>
+                <li>Developed a multi-agent system for secure invoice processing using LangGraph.</li>
+                <li>Fixed critical vulnerabilities related to numeric bypasses in financial workflows.</li>
+                <li>Integrated stateful validation nodes to ensure human-in-the-loop compliance for high-value transactions.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <span class="job-title">Autonomous Trading Bot (AI-Powered)</span>
+            <ul>
+                <li>Engineered a production-ready trading system with real-time signal analysis.</li>
+                <li>Implemented back-testing and risk-management protocols for secure financial execution.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <span class="skill">Python (Expert)</span>
+            <span class="skill">LangChain/LangGraph</span>
+            <span class="skill">FinTech API Integration</span>
+            <span class="skill">Machine Learning (XGBoost)</span>
+            <span class="skill">Transaction Monitoring</span>
+            <span class="skill">REST API (Flask/FastAPI)</span>
+            <span class="skill">Anomaly Detection</span>
+        </div>
+    </div>
+
+    <button onclick="window.print()" style="margin-top: 50px; padding: 10px 20px; background: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer;">Print to PDF</button>
+
+</body>
+</html>
